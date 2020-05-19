@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    font-family: 'PT Serif', serif;
+    overflow-x: hidden;
+}
+img{
+    height:auto;
+    max-width:100%;
+    margin:0 auto;
+    display:block;
+}
+ul, p{
+    font-size:18px;
+}
+.background{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.background-top{
+    height:100vh;
+    background-image:url('../img/europe2.png');
+    background-position: top center;
+}
+.background-bottom{
+    height:100vh;
+    background-image:url('../img/Rizal_execution.jpg');
+    background-position: top center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.background-bottom:before{
+    content:' ';
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+#main{
+    text-align:center;
+    margin:0 auto;
+    padding: 50px 20px 40px;
+}
+#title,
+#footer-quote{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size:40px;
+    margin-bottom:15px;
+}
+figure{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 390px;
+}
+figcaption{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#tribute-info{
+    margin: 40px auto 0;
+    max-width:991px;
+    text-align:left;
+    line-height:1.9em;
+}
+#tribute-info li{
+    margin-bottom:10px;
+}
+h2{
+    margin:25px 0 10px;
+}
+.background-bottom-inner{
+    position: absolute;
+    align-self:center;
+    color:white;
+    z-index:2;
+    font-size:10px;
+}
+
+#footer-byline{
+    float:right;
+    margin-top: -28px;
+}
